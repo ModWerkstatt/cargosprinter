@@ -1,0 +1,791 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 9.54451, 1.7922625541687, 4.040931224823, },
+		bbMin = { -10.2688, -1.3734436035156, -0.019770294427872, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 37.665821075439, 4.5828533172607, 2.0303506851196, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/CargoSprinter/rumpf_br691.5.mtl", },
+						mesh = "vehicle/train/CargoSprinter/rumpf_br691_lod0.msh",
+						name = "rumpf_kabine",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+                        children = {
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/drehgestell_lod0.msh",
+						        name = "drehgestell",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod0.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.269967079, 0, 0.4718516767025, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod0.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0.4718516767025, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/magnet_lod0.msh",
+						        name = "magnet",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/sander_lod0.msh",
+						        name = "sander",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7084927558899, 0, 0, 1, },
+                    },
+					{
+                        children = {
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/drehgestell_lod0.msh",
+						        name = "drehgestell",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod0.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.269967079, 0, 0.4718516767025, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod0.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0.4718516767025, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.75607, 0, 0, 1, },
+                    },
+					{
+						materials = { "vehicle/train/CargoSprinter/fenster.mtl", },
+						mesh = "vehicle/train/CargoSprinter/glas_br691_lod0.msh",
+						name = "glas",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/CargoSprinter/licht_weiss_br691_lod0.msh",
+						name = "licht_weiss",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/CargoSprinter/licht_rot_br691_lod0.msh",
+						name = "licht_rot",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 150,
+		},
+        {
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/CargoSprinter/rumpf_br691.5.mtl", },
+						mesh = "vehicle/train/CargoSprinter/rumpf_br691_lod1.msh",
+						name = "rumpf_kabine",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+                        children = {
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/drehgestell_lod1.msh",
+						        name = "drehgestell",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod1.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.269967079, 0, 0.4718516767025, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod1.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0.4718516767025, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7084927558899, 0, 0, 1, },
+                    },
+
+					{
+                        children = {
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/drehgestell_lod1.msh",
+						        name = "drehgestell",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod1.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.269967079, 0, 0.4718516767025, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod1.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0.4718516767025, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.75607, 0, 0, 1, },
+                    },
+					{
+						materials = { "vehicle/train/CargoSprinter/fenster.mtl", },
+						mesh = "vehicle/train/CargoSprinter/glas_br691_lod0.msh",
+						name = "glas",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/CargoSprinter/licht_weiss_br691_lod0.msh",
+						name = "licht_weiss",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/CargoSprinter/licht_rot_br691_lod0.msh",
+						name = "licht_rot",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 150,
+			visibleTo = 500,
+		},
+        {
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/CargoSprinter/rumpf_br691.5.mtl", },
+						mesh = "vehicle/train/CargoSprinter/rumpf_br691_lod2.msh",
+						name = "rumpf_kabine",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+                        children = {
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/drehgestell_lod2.msh",
+						        name = "drehgestell",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod2.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.269967079, 0, 0.4718516767025, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod2.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0.4718516767025, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7084927558899, 0, 0, 1, },
+                    },
+
+					{
+                        children = {
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/drehgestell_lod2.msh",
+						        name = "drehgestell",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod2.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.269967079, 0, 0.4718516767025, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/rad_lod2.msh",
+						        name = "rad1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0.4718516767025, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.75607, 0, 0, 1, },
+                    },
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 1800,
+		},
+	},
+	metadata = {
+        availability = {
+			yearFrom = 1996,
+			yearTo = 2004,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			name = _("BR691.5_name"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/train/CargoSprinter/rad_lod0.msh", },
+					backBackwardParts = { 14, },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 13, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/CargoSprinter/rad_lod1.msh", },
+					backBackwardParts = { 12, },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 11, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/CargoSprinter/rad_lod2.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 530,
+					tractiveEffort = 100,
+					type = "DIESEL",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/truck_modern/horn.wav",
+				name = "train_diesel",
+			},
+			topSpeed = 33.333333333333,
+			weight = 42.5,
+		},
+		seatProvider = {
+			drivingLicense = "RAIL",
+			seats = {
+				{
+                    animation = "driving_upright",
+                    crew = true,
+                    forward = true,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.8, -0.8, 1.7, 1, },
+                },
+			},
+		},
+        cargoSlotProvider = {
+			slots = {
+	            {
+					models = { "vehicle/train/CargoSprinter/klammern/klammern_br690_unbeladen_40ft.mdl", },
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					randomId = 0,
+				},
+                {
+					models = { "vehicle/train/CargoSprinter/klammern/klammern_br690_beladen_40ft.mdl", },
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					randomId = 1,
+				},
+                {
+					models = { "vehicle/train/CargoSprinter/klammern/klammern_br690_beladen_20ft_1.mdl", },
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					randomId = 2,
+				},
+                {
+					models = { "vehicle/train/CargoSprinter/klammern/klammern_br690_unbeladen_20ft_2.mdl", },
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					randomId = 3,
+				},
+                {
+					models = {
+						"asset/container_nando/container_40ft/container_40ft_cma.mdl",
+						"asset/container_nando/container_40ft/container_40ft_csx.mdl",
+						"asset/container_nando/container_40ft/container_40ft_dhl.mdl",
+						"asset/container_nando/container_40ft/container_40ft_evergreen.mdl",
+						"asset/container_nando/container_40ft/container_40ft_generic.mdl",
+						"asset/container_nando/container_40ft/container_40ft_hamburg.mdl",
+						"asset/container_nando/container_40ft/container_40ft_hanjin.mdl",
+						"asset/container_nando/container_40ft/container_40ft_hl.mdl",
+						"asset/container_nando/container_40ft/container_40ft_maersk.mdl",
+						"asset/container_nando/container_40ft/container_40ft_maikc.mdl",
+						"asset/container_nando/container_40ft/container_40ft_pacer.mdl",
+						"asset/container_nando/container_40ft/container_40ft_po.mdl",
+						"asset/container_nando/container_40ft/container_40ft_pof.mdl",
+						"asset/container_nando/container_40ft/container_40ft_samskip.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_cma.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_cosco.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_csx.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_dhl.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_evergreen.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_generic.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_hamburg.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_hanjin.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_hl.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_maersk.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_maikc.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_msc.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_one.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_oocl.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_pacer.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_po.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_pof.mdl",
+						"asset/container_kaleut/container_40ft_hc/container_40ft_hc_samskip.mdl",
+					},
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 1.16, 1, },
+					randomId = 4,
+				},
+				{
+					models = {
+						"asset/container_nando/container_20ft/container_20ft_cma.mdl",
+						"asset/container_nando/container_20ft/container_20ft_csx.mdl",
+						"asset/container_nando/container_20ft/container_20ft_dhl.mdl",
+						"asset/container_nando/container_20ft/container_20ft_evergreen.mdl",
+						"asset/container_nando/container_20ft/container_20ft_generic.mdl",
+						"asset/container_nando/container_20ft/container_20ft_hamburg.mdl",
+						"asset/container_nando/container_20ft/container_20ft_hanjin.mdl",
+						"asset/container_nando/container_20ft/container_20ft_hl.mdl",
+						"asset/container_nando/container_20ft/container_20ft_maersk.mdl",
+						"asset/container_nando/container_20ft/container_20ft_maikc.mdl",
+						"asset/container_nando/container_20ft/container_20ft_pacer.mdl",
+						"asset/container_nando/container_20ft/container_20ft_po.mdl",
+						"asset/container_nando/container_20ft/container_20ft_pof.mdl",
+						"asset/container_nando/container_20ft/container_20ft_samskip.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_cma.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_cosco.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_csx.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_dhl.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_evergreen.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_generic.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_hamburg.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_hanjin.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_hl.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_maersk.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_maikc.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_msc.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_one.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_oocl.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_pacer.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_po.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_pof.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_samskip.mdl",
+					},
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1, 0, 1.16, 1, },
+					randomId = 5,
+				},
+				{
+					models = {
+						"asset/container_nando/container_20ft/container_20ft_cma.mdl",
+						"asset/container_nando/container_20ft/container_20ft_csx.mdl",
+						"asset/container_nando/container_20ft/container_20ft_dhl.mdl",
+						"asset/container_nando/container_20ft/container_20ft_evergreen.mdl",
+						"asset/container_nando/container_20ft/container_20ft_generic.mdl",
+						"asset/container_nando/container_20ft/container_20ft_hamburg.mdl",
+						"asset/container_nando/container_20ft/container_20ft_hanjin.mdl",
+						"asset/container_nando/container_20ft/container_20ft_hl.mdl",
+						"asset/container_nando/container_20ft/container_20ft_maersk.mdl",
+						"asset/container_nando/container_20ft/container_20ft_maikc.mdl",
+						"asset/container_nando/container_20ft/container_20ft_pacer.mdl",
+						"asset/container_nando/container_20ft/container_20ft_po.mdl",
+						"asset/container_nando/container_20ft/container_20ft_pof.mdl",
+						"asset/container_nando/container_20ft/container_20ft_samskip.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_cma.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_cosco.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_csx.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_dhl.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_evergreen.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_generic.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_hamburg.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_hanjin.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_hl.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_maersk.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_maikc.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_msc.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_one.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_oocl.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_pacer.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_po.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_pof.mdl",
+						"asset/container_kaleut/container_20ft_hc/container_20ft_hc_samskip.mdl",
+					},
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.348, 0, 1.16, 1, },
+					randomId = 6,
+				},	
+				{
+					models = {
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_chevron.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_et.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_generic.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_gulf.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_hoyer.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_maikc.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_stolt.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_sunoco.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_texaco.mdl",
+					},
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1, 0, 1.125, 1, },
+					randomId = 7,
+				},		
+				{
+					models = {
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_chevron.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_et.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_generic.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_gulf.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_hoyer.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_maikc.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_stolt.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_sunoco.mdl",
+						"asset/container_nando/tanktainer_20ft/tanktainer_20ft_texaco.mdl",
+					},
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.348, 0, 1.125, 1, },
+					randomId = 8,
+				},	
+            },
+        },
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+                    {
+					    {
+						    capacity = 50,
+						    customCargoModels = {
+							    configurations = {
+								    {
+									    slotLevels = {
+										    { 0, },
+                                            { 1, 4, },
+									    },
+								    },
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 5, },
+                                            { 1, 5, 6, },
+										},
+									},
+							    },
+						    },
+						    type = "GOODS",
+					    },
+				    },
+                    {
+						{
+							capacity = 50,
+							customCargoModels = {
+								configurations = {
+									{
+									    slotLevels = {
+										    { 0, },
+                                            { 1, 4, },
+									    },
+								    },
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 5, },
+                                            { 1, 5, 6, },
+										},
+									},
+								},
+							},
+							type = "GRAIN",
+						},
+					},
+					{
+						{
+							capacity = 70,
+							customCargoModels = {
+								configurations = {
+									{
+									    slotLevels = {
+										    { 0, },
+                                            { 1, 4, },
+									    },
+								    },
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 5, },
+                                            { 1, 5, 6, },
+										},
+									},			
+								},
+							},
+							type = "CONSTRUCTION_MATERIALS",
+						},
+					},
+					{
+						{
+							capacity = 70,
+							customCargoModels = {
+								configurations = {
+									{
+									    slotLevels = {
+										    { 0, },
+                                            { 1, 4, },
+									    },
+								    },
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 5, },
+                                            { 1, 5, 6, },
+										},
+									},			
+								},
+							},
+							type = "LOGS",
+						},
+					},
+					{
+						{
+							capacity = 70,
+							customCargoModels = {
+								configurations = {
+									{
+									    slotLevels = {
+										    { 0, },
+                                            { 1, 4, },
+									    },
+								    },
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 5, },
+                                            { 1, 5, 6, },
+										},
+									},			
+								},
+							},
+							type = "PLANKS",
+						},
+					},
+					{
+						{
+							capacity = 70,
+							customCargoModels = {
+								configurations = {
+									{
+									    slotLevels = {
+										    { 0, },
+                                            { 1, 4, },
+									    },
+								    },
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 5, },
+                                            { 1, 5, 6, },
+										},
+									},			
+								},
+							},
+							type = "TOOLS",
+						},
+					},
+					{
+						{
+							capacity = 70,
+							customCargoModels = {
+								configurations = {
+									{
+									    slotLevels = {
+										    { 0, },
+                                            { 1, 4, },
+									    },
+								    },
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 5, },
+                                            { 1, 5, 6, },
+										},
+									},			
+								},
+							},
+							type = "MACHINES",
+						},
+					},
+					{
+						{
+							capacity = 70,
+							customCargoModels = {
+								configurations = {
+									{
+									    slotLevels = {
+										    { 0, },
+                                            { 1, 4, },
+									    },
+								    },
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 5, },
+                                            { 1, 5, 6, },
+										},
+									},			
+								},
+							},
+							type = "PLASTIC",
+						},
+					},
+					{
+						{
+							capacity = 70,
+							customCargoModels = {
+								configurations = {
+									{
+									    slotLevels = {
+										    { 0, },
+                                            { 1, 4, },
+									    },
+								    },
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 5, },
+                                            { 1, 5, 6, },
+										},
+									},			
+								},
+							},
+							type = "FOOD",
+						},
+					},
+					{
+						{
+							capacity = 70,
+							customCargoModels = {
+								configurations = {
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 7, },
+                                            { 1, 7, 8, },
+										},
+									},			
+								},
+							},
+							type = "OIL",
+						},
+					},
+					{
+						{
+							capacity = 70,
+							customCargoModels = {
+								configurations = {
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 7, },
+                                            { 1, 7, 8, },
+										},
+									},			
+								},
+							},
+							type = "CRUDE",
+						},
+					},
+					{
+						{
+							capacity = 70,
+							customCargoModels = {
+								configurations = {
+                                    {
+										slotLevels = {
+											{ 0, },
+											{ 2, 3, 7, },
+                                            { 1, 7, 8, },
+										},
+									},			
+								},
+							},
+							type = "FUEL",
+						},
+					},
+                },
+            },
+			loadSpeed = 1,
+			multipleUnitOnly = true,
+			reversible = true,
+		},
+	},
+	version = 1,
+}
+end

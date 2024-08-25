@@ -1,0 +1,62 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = {
+			3.05, 1.21, 2.6,
+		},
+		bbMin = {
+			-3.05, -1.21, 0,
+		},
+	},
+	collider = {
+		params = {
+
+		},
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/CargoSprinter/rumpf.mtl", },
+						mesh = "vehicle/waggon/CargoSprinter/klammern/klammern_br691_wagen_beladen_1_lod0.msh",
+						name = "klammern_br690_unbeladen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 150,
+		},
+        {
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/CargoSprinter/rumpf.mtl", },
+						mesh = "vehicle/waggon/CargoSprinter/klammern/klammern_br691_wagen_beladen_1_lod1.msh",
+						name = "klammern_br690_unbeladen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 150,
+			visibleTo = 500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1996,
+			yearTo = 2004,
+		},
+		cost = {
+			price = 0,
+		},
+	},
+	version = 1,
+}
+end
