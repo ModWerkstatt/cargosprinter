@@ -1,8 +1,8 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 8.29785, 1.7922625541687, 4.040931224823, },
-		bbMin = { -8.29785, -1.3734436035156, -0.019770294427872, },
+		bbMax = { 9.54451, 1.7922625541687, 4.040931224823, },
+		bbMin = { -10.2688, -1.3734436035156, -0.019770294427872, },
 	},
 	collider = {
 		params = {
@@ -16,8 +16,8 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "vehicle/waggon/CargoSprinter/rumpf.mtl", },
-						mesh = "vehicle/waggon/CargoSprinter/rumpf_br691_wagen_lod0.msh",
+						materials = { "vehicle/train/CargoSprinter/rumpf_br691.5.mtl", },
+						mesh = "vehicle/train/CargoSprinter/rumpf_br691_lod0.msh",
 						name = "rumpf_kabine",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
@@ -41,11 +41,22 @@ return {
 						        name = "rad1",
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0.4718516767025, 1, },
 					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/magnet_lod0.msh",
+						        name = "magnet",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/CargoSprinter/beweglich.mtl", },
+						        mesh = "vehicle/train/CargoSprinter/sander_lod0.msh",
+						        name = "sander",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.269967079, 0, 0, 1, },
+					        },
                         },
 				        name = "bogie1",
-				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.2, 0, 0, 1, },
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7084927558899, 0, 0, 1, },
                     },
-
 					{
                         children = {
 					        {
@@ -68,8 +79,26 @@ return {
 					        },
                         },
 				        name = "bogie2",
-				        transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.2, 0, 0, 1, },
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.75607, 0, 0, 1, },
                     },
+					{
+						materials = { "vehicle/train/CargoSprinter/fenster.mtl", },
+						mesh = "vehicle/train/CargoSprinter/glas_br691_lod0.msh",
+						name = "glas",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/CargoSprinter/licht_weiss_br691_lod0.msh",
+						name = "licht_weiss",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/CargoSprinter/licht_rot_br691_lod0.msh",
+						name = "licht_rot",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
 				},
 				name = "RootNode",
 				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
@@ -82,8 +111,8 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "vehicle/waggon/CargoSprinter/rumpf.mtl", },
-						mesh = "vehicle/waggon/CargoSprinter/rumpf_br691_wagen_lod1.msh",
+						materials = { "vehicle/train/CargoSprinter/rumpf_br691.5.mtl", },
+						mesh = "vehicle/train/CargoSprinter/rumpf_br691_lod1.msh",
 						name = "rumpf_kabine",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
@@ -109,7 +138,7 @@ return {
 					        },
                         },
 				        name = "bogie1",
-				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.14, 0, 0, 1, },
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7084927558899, 0, 0, 1, },
                     },
 
 					{
@@ -134,8 +163,26 @@ return {
 					        },
                         },
 				        name = "bogie2",
-				        transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.14, 0, 0, 1, },
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.75607, 0, 0, 1, },
                     },
+					{
+						materials = { "vehicle/train/CargoSprinter/fenster.mtl", },
+						mesh = "vehicle/train/CargoSprinter/glas_br691_lod0.msh",
+						name = "glas",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/CargoSprinter/licht_weiss_br691_lod0.msh",
+						name = "licht_weiss",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/CargoSprinter/licht_rot_br691_lod0.msh",
+						name = "licht_rot",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
 				},
 				name = "RootNode",
 				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
@@ -143,12 +190,13 @@ return {
 			static = false,
 			visibleFrom = 150,
 			visibleTo = 500,
-		},{
+		},
+        {
 			node = {
 				children = {
 					{
-						materials = { "vehicle/waggon/CargoSprinter/rumpf.mtl", },
-						mesh = "vehicle/waggon/CargoSprinter/rumpf_br691_wagen_lod2.msh",
+						materials = { "vehicle/train/CargoSprinter/rumpf_br691.5.mtl", },
+						mesh = "vehicle/train/CargoSprinter/rumpf_br691_lod2.msh",
 						name = "rumpf_kabine",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
@@ -174,7 +222,7 @@ return {
 					        },
                         },
 				        name = "bogie1",
-				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.22, 0, 0, 1, },
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7084927558899, 0, 0, 1, },
                     },
 
 					{
@@ -199,7 +247,7 @@ return {
 					        },
                         },
 				        name = "bogie2",
-				        transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.2, 0, 0, 1, },
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.75607, 0, 0, 1, },
                     },
 				},
 				name = "RootNode",
@@ -219,7 +267,7 @@ return {
 			price = -1,
 		},
 		description = {
-			name = _("BR690_wagen_name"),
+			name = _("BR691.5_name"),
 		},
 		emission = {
 			idleEmission = -1,
@@ -234,23 +282,23 @@ return {
 			configs = {
 				{
 					axles = { "vehicle/train/CargoSprinter/rad_lod0.msh", },
-					backBackwardParts = { },
+					backBackwardParts = { 14, },
 					backForwardParts = { },
 					blinkingLights0 = { },
 					blinkingLights1 = { },
 					frontBackwardParts = { },
-					frontForwardParts = { },
+					frontForwardParts = { 13, },
 					innerBackwardParts = { },
 					innerForwardParts = { },
 				},
 				{
 					axles = { "vehicle/train/CargoSprinter/rad_lod1.msh", },
-					backBackwardParts = { },
+					backBackwardParts = { 12, },
 					backForwardParts = { },
 					blinkingLights0 = { },
 					blinkingLights1 = { },
 					frontBackwardParts = { },
-					frontForwardParts = { },
+					frontForwardParts = { 11, },
 					innerBackwardParts = { },
 					innerForwardParts = { },
 				},
@@ -267,40 +315,53 @@ return {
 				},
 			},
 			engines = {
+				{
+					power = 530,
+					tractiveEffort = 100,
+					type = "DIESEL",
+				},
 			},
 			soundSet = {
-				name = "waggon_freight_modern",
+				horn = "vehicle/truck_modern/horn.wav",
+				name = "train_diesel",
 			},
 			topSpeed = 33.333333333333,
-			weight = 12,
+			weight = 42.5,
 		},
 		seatProvider = {
 			drivingLicense = "RAIL",
 			seats = {
+				{
+                    animation = "driving_upright",
+                    crew = true,
+                    forward = true,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.8, -0.8, 1.7, 1, },
+                },
 			},
 		},
         cargoSlotProvider = {
 			slots = {
 	            {
-					models = { "vehicle/waggon/CargoSprinter/klammern/klammern_br691_wagen_unbeladen_40ft.mdl", },
+					models = { "vehicle/train/CargoSprinter/klammern/klammern_br690_unbeladen_40ft.mdl", },
 					group = 0,
 					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					randomId = 0,
 				},
                 {
-					models = { "vehicle/waggon/CargoSprinter/klammern/klammern_br691_wagen_beladen_40ft.mdl", },
+					models = { "vehicle/train/CargoSprinter/klammern/klammern_br690_beladen_40ft.mdl", },
 					group = 0,
 					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					randomId = 1,
 				},
                 {
-					models = { "vehicle/waggon/CargoSprinter/klammern/klammern_br691_wagen_beladen_20ft_1.mdl", },
+					models = { "vehicle/train/CargoSprinter/klammern/klammern_br690_beladen_20ft_1.mdl", },
 					group = 0,
 					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					randomId = 2,
 				},
                 {
-					models = { "vehicle/waggon/CargoSprinter/klammern/klammern_br691_wagen_unbeladen_20ft_2.mdl", },
+					models = { "vehicle/train/CargoSprinter/klammern/klammern_br690_unbeladen_20ft_2.mdl", },
 					group = 0,
 					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					randomId = 3,
@@ -380,7 +441,7 @@ return {
 						"asset/container_mw/container_40ft_ot/container_40ft_ot_yang_ming.mdl",
 					},
 					group = 0,
-					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1.16, 1, },
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 1.16, 1, },
 					randomId = 4,
 				},
 				{
@@ -433,7 +494,7 @@ return {
 						"asset/container_mw/container_20ft_ot/container_20ft_ot_triton.mdl",
 					},
 					group = 1,
-					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.348, 0, 1.16, 1, },
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1, 0, 1.16, 1, },
 					randomId = 5,
 				},
 				{
@@ -486,7 +547,7 @@ return {
 						"asset/container_mw/container_20ft_ot/container_20ft_ot_triton.mdl",
 					},
 					group = 0,
-					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.348, 0, 1.16, 1, },
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.348, 0, 1.16, 1, },
 					randomId = 6,
 				},	
 				{
@@ -513,7 +574,7 @@ return {
 						"asset/container_mw/tanktainer_20ft/tanktainer_20ft_vtg.mdl",
 					},
 					group = 0,
-					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.348, 0, 1.125, 1, },
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1, 0, 1.125, 1, },
 					randomId = 7,
 				},		
 				{
@@ -540,7 +601,7 @@ return {
 						"asset/container_mw/tanktainer_20ft/tanktainer_20ft_vtg.mdl",
 					},
 					group = 0,
-					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.348, 0, 1.125, 1, },
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.348, 0, 1.125, 1, },
 					randomId = 8,
 				},	
                 {
@@ -557,7 +618,7 @@ return {
 						"asset/container_mw/tankcontainer_40ft/tankcontainer_40ft_weiss.mdl",
 					},
 					group = 0,
-					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1.16, 1, },
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 1.16, 1, },
 					randomId = 9,
 				},
             },
